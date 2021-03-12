@@ -26,6 +26,13 @@ router.get(
 );
 
 router.get(
+  '/u',
+  wrap(async (req, res) => {
+    res.send('sss');
+  })
+);
+
+router.get(
   '/:id',
   wrap(async (req, res) => {
     const lang = req.query.lang || DEFAULT_LANG;
